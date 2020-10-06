@@ -54,6 +54,6 @@ passport.serializeUser(User.serializeUser());
 passport.deserializeUser(User.deserializeUser());
 
 
-app.listen(3000, () => {
-	console.log('server listening on port 3000');
-});
+app.listen(8080, (req, res) => {
+  console.log("connection done ...");
+})
